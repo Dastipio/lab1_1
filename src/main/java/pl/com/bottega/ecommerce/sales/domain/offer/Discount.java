@@ -6,21 +6,21 @@ public class Discount {
 	
 	private String cause;
 
-	private BigDecimal value;
+	private BigDecimal cost;
 	
 	private String currency;
 
 	public BigDecimal getValue() {
-		return value;
+		return cost;
 	}
 
-	public void setValue(BigDecimal value) {
-		this.value = value;
+	public void setValue(BigDecimal cost) {
+		this.cost = cost;
 	}
 	
 	public boolean equals(Object obj) {
 		Discount other = (Discount)obj;
-		if(other.value != value)
+		if(other.cost != cost)
 			return false;
 		if(other.cause != cause)
 			return false;
